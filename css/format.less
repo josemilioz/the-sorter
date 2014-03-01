@@ -1,0 +1,485 @@
+/**
+ * Plugin: The Sorter
+ * Plugin URI: http://metamorpher.net/the-sorter
+ * Description: A drag & drop sorter of posts, for any purpose.
+ * Version: 1.0
+ * Author: Metamorpher
+ * Author URI: http://metamorpher.net/
+ * License: GPLv2 or later
+ * 
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ * @author Metamorpher
+ * @package the-sorter
+ * @since 1.0
+ */
+
+#the_sorter_form, #the_sorter_list, #the_sorter_items, #the_sorter_howto {
+
+	h2 {
+		small {
+			color: #999;
+			font-weight: 900;
+			display: inline-block;
+			margin-left: 10px;
+		}
+	}
+
+	#post-body-content {
+		h2.top {
+			margin-top: 0px;
+			line-height: 1;
+		}
+				
+		table {
+			&.add-area {
+				width: 100%;
+				border: none;
+				
+				td {
+					padding: 0 0 1.5em !important;
+					vertical-align: top;
+					
+					label {
+						margin-top: 0.4em;
+						display: block;
+					}
+					
+					.code {
+						width: 100%;
+					}
+				}
+				
+				#area_name {
+					font-size: 1.7em;
+					line-height: 1.7em;
+					padding: 0 7px;
+					width: 100%;
+				}				
+			}
+		}
+		
+		textarea {
+			resize: vertical;
+		}
+	}
+
+	dl {
+		clear: both;
+		overflow: hidden;
+		
+		dt {
+			font-weight: bold;
+			font-style: italic;
+			color: #777;
+			float: left;
+			width: 30%;
+			margin: 0;
+		}
+		
+		dd {
+			margin: 0;
+			width: 65%;
+			float: right;
+			
+			em {
+				color: #900 !important;
+			}
+		}
+	}
+
+	.advice {
+		padding: 6px 10px;
+		border-radius: 3px;
+		background: #FF9;
+		border: 1px solid #EFDF32;
+		box-shadow: 2px 2px 0 #EFDF32;
+		margin-bottom: 20px;
+	}
+
+	.deactivated {
+		color: #B00;
+		font-weight: 300;
+		font-style: italic;
+	}
+
+	#empty_areas {
+		width: 350px;
+		text-align: center;
+		margin: 25% auto 0;
+		color: #CCC;
+		font-size: 2.1em;
+		line-height: 1.7;
+	}
+
+}
+
+
+#the_sorter_items {
+	
+	.area_items {
+		clear: both;
+		overflow: hidden;
+		
+		.item {
+			float: left;
+			width: 300px;
+			height: 150px;
+			border: 1px solid #FFF;
+			outline: 1px solid #CCC;
+			background-image: url('../img/image.png');
+			background-position: center center !important;
+			background-color: #EEE;
+			background-repeat: no-repeat !important;
+			margin: 0 10px 10px 1px;
+
+			h3 {
+				padding: 5px 10px;
+				margin: 101px 0 1px;
+				background: rgba(0,0,0,0.5);
+				color: #FFF;
+				overflow: hidden;
+				z-index: 30;
+				position: relative;
+			}
+			
+			.order {
+				float: right;
+				font-size: 1.6em;
+				font-style: italic;
+				text-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
+				padding: 10px 10px 0 0;
+				color: #FFF;
+				z-index: 30;
+				position: relative;
+			}
+			
+			.info {
+				background: rgba(0,0,0,0.7);
+				color: #FFF;
+				padding: 3px 10px;
+				vertical-align: bottom;
+				bottom: 0;
+				overflow: hidden;
+				z-index: 30;
+				position: relative;
+				
+				span {
+					margin: 0 10px;
+					
+					&:first-child {
+						margin-left: 0;
+					}
+					
+					&:last-child {
+						margin-right: 0;
+					}
+					
+					a {
+						color: #FFF;
+					}
+				}
+			}			
+			
+			.tools {
+				position: absolute;
+				margin: 3px;
+				display: none;
+				z-index: 40;
+				
+				a {
+					display: block;
+					float: left;
+					padding: 3px 5px;
+					text-decoration: none;
+					background: rgba(255,255,255,0.8);
+					margin: 0 3px 0 0;
+					
+					&.delete {
+						color: #C00;
+						&:hover {
+							background: #C00;
+							color: #FFF;
+						}
+					}
+					
+					&.activate {
+						color: #090;
+						&:hover {
+							background: #090;
+							color: #FFF;
+						}
+					}
+
+					&.deactivate {
+						color: #777;
+						&:hover {
+							background: #777;
+							color: #FFF;
+						}
+					}
+				}
+			}
+			
+			&:hover {
+				.tools {
+					display: block;
+				}
+				
+				cursor: move;
+			}
+		}
+		
+		a.add-item, .ui-state-highlight {
+			float: left;
+			display: block;
+			width: 300px;
+			height: 150px;
+			line-height: 150px;
+			font-size: 1.7em;
+			text-align: center;
+			text-decoration: none;
+			color: #999;
+			border: 1px dashed #CCC;
+			margin: 0 10px 10px 1px;
+
+			&:hover {
+				background: #DDD;
+				border: 1px dashed #000;
+				color: #000;					
+			}
+		}
+		
+		.ui-state-highlight {
+			background: #FF9;
+		}
+		
+		.item-deactivated {
+			.item-deactivated-message {
+				display: block;
+				position: absolute;
+				line-height: 150px;
+				width: 300px;
+				text-align: center;
+				color: #FFF;
+				background: rgba(255,255,255,0.7);
+				font-size: 1.7em;
+				text-shadow: 1px 1px 5px #000, -1px -1px 5px #000;
+				z-index: 10;
+			}
+		}
+		
+		.item-deactivated-message {
+			display: none;
+		}
+	}
+		
+}
+
+#the_sorter_howto {
+	p, li {
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.5;
+	}
+	
+	h3 {
+		font-size: 20px;
+	}
+	
+	ul {
+		list-style: square;
+		margin-left: 1.5em;
+	}
+}
+
+#the_sorter_form {
+	#add_item {
+		padding: 20px;
+		background: #FFF;
+		box-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.2 );
+		margin-bottom: 2em;
+		
+		form {
+			clear: both;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;	
+		}
+
+		p, li		{ margin: .6em 0; padding: 0; line-height: 140%; }
+		ol, ul		{ margin: 1.1em 0 1.2em 1.5em !important; padding: 0 }
+		h2,
+		h3,
+		h4,
+		h5,
+		h6			{ margin: 0 0 0.5em; padding: 0; }
+
+		span.titulo-partes	{ font-weight: bold; color: #999; text-decoration: underline; }
+
+
+		/* ESPACIADORES y OTROS DEFAULTS */
+		.center				{ text-align: center; }
+		.button-primary,
+		.button-large		{ font-size: 16px !important; padding: 5px 20px; height: auto !important; }
+		.hidden				{ display: none; }
+
+		.box-izq			{ float: left; min-width: 15%; max-width: 35%; margin: 2px; }
+		.box-der			{ float: right; width: auto; margin-left: 2%; }
+		.cut				{ 
+			clear: both; 
+			margin: 0 0 3em;
+			
+			&:last-child {
+				margin-bottom: 0 !important;
+			}
+		}
+		#confirm { padding-top: 20px !important; }
+
+		.intro				{ margin: 0 0 2em; }
+		.intro p			{ font-size: 1.2em; margin: 0; }
+
+		#post_types			{ margin-top: 20px; position: relative; }
+		#post_types span	{ margin: 0 10px 10px; display: inline-block; font-size: 1.2em; }
+
+		/* BOX */
+
+		.grad-box {
+			background-image: linear-gradient(bottom, #CCCCCC 10%, #EBEBEB 78%);
+			background-image: -o-linear-gradient(bottom, #CCCCCC 10%, #EBEBEB 78%);
+			background-image: -moz-linear-gradient(bottom, #CCCCCC 10%, #EBEBEB 78%);
+			background-image: -webkit-linear-gradient(bottom, #CCCCCC 10%, #EBEBEB 78%);
+			background-image: -ms-linear-gradient(bottom, #CCCCCC 10%, #EBEBEB 78%);
+			background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.1, #CCCCCC), color-stop(0.78, #EBEBEB));	
+		}
+
+		.grad-box p	{ text-shadow: 0 1px 1px #FFF; margin: .9em 10px; line-height: 1.5em; }
+
+		.grad-advice {
+			background-image: linear-gradient(bottom, #F7F569 10%, #FFFEAB 78%);
+			background-image: -o-linear-gradient(bottom, #F7F569 10%, #FFFEAB 78%);
+			background-image: -moz-linear-gradient(bottom, #F7F569 10%, #FFFEAB 78%);
+			background-image: -webkit-linear-gradient(bottom, #F7F569 10%, #FFFEAB 78%);
+			background-image: -ms-linear-gradient(bottom, #F7F569 10%, #FFFEAB 78%);
+			background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.1, #F7F569), color-stop(0.78, #FFFEAB));
+
+			border-radius: 8px;
+			-o-border-radius: 8px;
+			-moz-border-radius: 8px;
+			-icab-border-radius: 8px;
+			-khtml-border-radius: 8px;
+			-webkit-border-radius: 8px;
+
+			box-shadow: 0 0 0 1px #AAA;
+			-o-box-shadow: 0 0 0 1px #AAA;
+			-moz-box-shadow: 0 0 0 1px #AAA;
+			-icab-box-shadow: 0 0 0 1px #AAA;
+			-khtml-box-shadow: 0 0 0 1px #AAA;
+			-webkit-box-shadow: 0 0 0 1px #AAA;
+
+			color: #6c6b31;
+			margin-top: 10px;
+			padding: 10px;
+			text-shadow: 0 1px 1px #FFF;
+			border: 1px solid #FFF;
+		}
+
+
+		/* TITULOS */
+
+		h2		{ font-size: 1.5em; letter-spacing: -.05em; }
+		h2 span	{
+			padding: 10px 15px;
+			display: inline-block;
+			margin: 0 0.5em 0 0;
+			border-radius: 40px;
+			-o-border-radius: 40px;
+			-moz-border-radius: 40px;
+			-icab-border-radius: 40px;
+			-khtml-border-radius: 40px;
+			-webkit-border-radius: 40px;
+			line-height: 1 !important;
+		}
+
+		h2 span.red		{ background: red; color: white }
+		h2 span.blue	{ background: blue; color: white }
+		h2 span.pink	{ background: pink; color: white }
+		h2 span.yellow	{ background: yellow; color: black }
+		h2 span.skyblue	{ background: skyblue; color: white }
+		h2 span.purple	{ background: purple; color: white }
+		h2 span.green	{ background: chartreuse; color: white }
+		h2 span.navy	{ background: navy; color: white }
+		h2 span.orange	{ background: orange; color: white }
+		h2 span.crimson	{ background: crimson; color: white }
+		h2 span.aqua	{ background: aqua; color: black }
+		h2 span.blue	{ background: blue }
+
+		/* POST AUTOCOMPLETAR */
+
+		#posts			{ display: none; }
+		.combo-text		{ width: 50%; margin: 0; padding: 5px; }
+		.combo-button		{ font-size: 8px !important; position: relative; top: 0 !important; height: 30px !important; line-height: 30px !important; width: 32px; }
+		.ui-autocomplete	{
+			max-height: 15em;
+			overflow-y: auto;
+			overflow-x: hidden;
+			padding-right: 20px;
+			width: 18.5em;
+			position: auto;
+		}
+
+		.ui-autocomplete {
+			background: #f2f2f2; /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMWQxZDEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top,  #f2f2f2 0%, #d1d1d1 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#d1d1d1)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #f2f2f2 0%,#d1d1d1 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #f2f2f2 0%,#d1d1d1 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #f2f2f2 0%,#d1d1d1 100%); /* IE10+ */
+			background: linear-gradient(top,  #f2f2f2 0%,#d1d1d1 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d1d1d1',GradientType=0 ); /* IE6-8 */
+
+			border: 1px solid #FFF;
+
+			border-radius: 8px;
+			-o-border-radius: 8px;
+			-moz-border-radius: 8px;
+			-icab-border-radius: 8px;
+			-khtml-border-radius: 8px;
+			-webkit-border-radius: 8px;
+
+			box-shadow: 0 0 0 1px #AAA;
+			-o-box-shadow: 0 0 0 1px #AAA;
+			-moz-box-shadow: 0 0 0 1px #AAA;
+			-icab-box-shadow: 0 0 0 1px #AAA;
+			-khtml-box-shadow: 0 0 0 1px #AAA;
+			-webkit-box-shadow: 0 0 0 1px #AAA;
+
+		}
+
+		.ui-autocomplete li			{ margin: 1px; }
+		.ui-autocomplete a			{ display: block; padding: 6px 8px !important; color: #000; text-shadow: 0 1px 1px #FFF; }
+		.ui-autocomplete a:hover	{ background: #FFF; border-radius: 5px; border: 1px solid #999; padding: 5px 7px !important; color: #333 }
+
+		/* LISTA DE IMAGENES */
+
+		#pick-post .posts-alert	{ color: red; font-style: italic; display: none; }
+	}
+}
+
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall */
+* html .ui-autocomplete		{ height: 10em; }

@@ -1,0 +1,503 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Sorter. Wordpress Plugin\n"
+"POT-Creation-Date: 2014-02-28 13:43-0400\n"
+"PO-Revision-Date: 2014-02-28 13:57-0400\n"
+"Last-Translator: \n"
+"Language-Team:  <metamorpher.py@gmail.com>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../add-item.php:33 ../areas.php:54 ../areas.php:167 ../howto.php:33
+#: ../items.php:47 ../thesorter.php:180 ../widget.php:43
+msgid "The Sorter"
+msgstr "El Sorteador"
+
+#: ../add-item.php:33
+msgid "Add item"
+msgstr "Agregar Item"
+
+#: ../add-item.php:42
+#, php-format
+msgid ""
+"To add a new item into the <strong>\"%1$s\"</strong> area, follow the steps "
+"on the left side of this panel."
+msgstr ""
+"Para agregar un nuevo ítem dentro del área <strong>\"%1$s\"</strong>, siga "
+"las instrucciones en el lado izquierdo del panel."
+
+#: ../add-item.php:52
+msgid "Select the post type"
+msgstr "Seleccione el tipo de entrada"
+
+#: ../add-item.php:54
+msgid "What kind of content you want to link to the area."
+msgstr "Que tipo de contenido desea enlazar al área."
+
+#: ../add-item.php:67
+msgid "Select the post"
+msgstr "Seleccione la entrada"
+
+#: ../add-item.php:69
+msgid "Which post you want to reference into the link."
+msgstr "Que entrada desea referenciar dentro del enlace a punto de crear."
+
+#: ../add-item.php:75
+msgid "No entries in this category."
+msgstr "No hay entradas en esta categoría."
+
+#: ../add-item.php:81
+msgid "Save Item"
+msgstr "Guardar Item"
+
+#: ../add-item.php:82
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../areas.php:55
+msgid "Add area"
+msgstr "Agregar área"
+
+#: ../areas.php:55
+msgid "Edit area"
+msgstr "Editar área"
+
+#: ../areas.php:56
+msgid "Add new"
+msgstr "Agregar nueva"
+
+#: ../areas.php:61
+msgid "There was an error during area saving. Try again."
+msgstr ""
+"Hubo un error mientras se intentaba guardar el área. Inténtelo de nuevo."
+
+#: ../areas.php:80
+msgid "Area name"
+msgstr "Nombre del área"
+
+#: ../areas.php:81
+msgid "Enter area name"
+msgstr "Ingrese el nombre del área"
+
+#: ../areas.php:85
+msgid "Advanced Options"
+msgstr "Opciones avanzadas"
+
+#: ../areas.php:86
+msgid "<strong>ADVICE:</strong> Proceed only if you have any HTML knowledge."
+msgstr ""
+"<strong>AVISO:</strong> Proceda únicamente si tiene conocimientos de HTML."
+
+#: ../areas.php:91
+msgid "Main Container Template"
+msgstr "Plantilla Principal"
+
+#: ../areas.php:102
+msgid "Item Template"
+msgstr "Plantilla de Item"
+
+#: ../areas.php:114
+msgid "Save Area"
+msgstr "Guardar Area"
+
+#: ../areas.php:133
+msgid ""
+"Are you sure you want to delete this area? It will also delete all items "
+"within."
+msgstr ""
+"¿Estás seguro de querer eliminar este área? También se eliminarán los ítems "
+"que contiene."
+
+#: ../areas.php:167 ../thesorter.php:190
+msgid "Areas"
+msgstr "Areas"
+
+#: ../areas.php:173 ../areas.php:181
+msgid "Name"
+msgstr "Nombre"
+
+#: ../areas.php:174 ../areas.php:182
+msgid "# of Items"
+msgstr "Nro. de Items"
+
+#: ../areas.php:175 ../areas.php:183
+msgid "Created"
+msgstr "Creado"
+
+#: ../areas.php:176 ../areas.php:184
+msgid "Last Modify"
+msgstr "Última Modificación"
+
+#: ../areas.php:191 ../items.php:67
+msgid "Deactivated"
+msgstr "Desactivado"
+
+#: ../areas.php:193
+msgid "Edit"
+msgstr "Editar"
+
+#: ../areas.php:194 ../items.php:71
+msgid "Deactivate"
+msgstr "Desactivar"
+
+#: ../areas.php:195 ../items.php:73
+msgid "Activate"
+msgstr "Activar"
+
+#: ../areas.php:196 ../items.php:75
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ../areas.php:197
+msgid "View Code"
+msgstr "Ver Código"
+
+#: ../areas.php:202
+msgid "Place this code wherever within your themes:"
+msgstr "Ubique este código donde desee, dentro de su tema:"
+
+#: ../areas.php:204
+msgid "<strong>or</strong> place this shortcode wherever within your posts:"
+msgstr ""
+"<strong>o</strong> ubique este «shortcode» donde desee, dentro de sus "
+"entradas:"
+
+#: ../howto.php:33 ../thesorter.php:199
+msgid "How To Use"
+msgstr "Cómo Usar"
+
+#: ../howto.php:35
+msgid ""
+"The Sorter organizes the posts in the way you prefer. It let you illustrate "
+"in a better way, sections of your themes that earlier were ordered only by "
+"columns on your database."
+msgstr ""
+"El Sorteador organiza los posts de la manera que prefieras. Te permite "
+"ilustrar de una mejor manera secciones de tu tema que antes eran ordenados "
+"sólo por las columnas en la base de datos."
+
+#: ../howto.php:37
+msgid ""
+"With The Sorter you can organize those posts creatively, and later give "
+"shape to slides, or lists with CSS. Don't worry, we do the tough job for "
+"you. You just will need to stylize the result."
+msgstr ""
+"Con El Sorteador puedes organizar las entradas creativamente, y luego dar "
+"forma a barridos, o listarlos con CSS. No te preocupes, nosotros hacemos el "
+"trabajo duro por ti. Sólo tendrás que estilizar el resultado. "
+
+#: ../howto.php:39
+msgid "Brief description of the product"
+msgstr "Breve descripción del producto"
+
+#: ../howto.php:41
+msgid ""
+"The Sorter handles two concepts: Areas and Items. Areas groups items and "
+"that is all. It means that you can create as many areas as you want, and "
+"populate them with items."
+msgstr ""
+"El Sorteador maneja dos conceptos: Áreas e Ítems. Las áreas agrupan a los "
+"ítems y eso es todo. Significa que puedes crear tantas áreas como desees y "
+"poblarlos con ítems."
+
+#: ../howto.php:43
+msgid ""
+"Areas consists of zones where the items are dropped to be displayed later. "
+"And items are references to the posts, fancy links with lot of properties "
+"that can be displayed in any manner, depending on your creativity and "
+"element manipulation."
+msgstr ""
+"Las áreas consisten en zonas dónde los ítems son depositados para ser "
+"publicados. Y los ítems son referencias a las entradas. Enlaces embellecidos "
+"con varias propiedades que se pueden mostrar de cualquier manera, "
+"dependiendo de la creatividad y manipulación de elementos."
+
+#: ../howto.php:45
+msgid "Procedure"
+msgstr "Procedimiento"
+
+#: ../howto.php:47
+msgid ""
+"In order to take advantage of The Sorter in its entirety, after the set up, "
+"you must follow these steps:"
+msgstr ""
+"Para obtener ventajas con El Sorteador, luego de la instalación, debes "
+"seguir estos pasos:"
+
+#: ../howto.php:50
+msgid ""
+"<strong>Create an Area.</strong> Go to 'Areas' and create an area using the "
+"form. The only field you MUST complete is the Name. The templates already "
+"have a default value. But of course, you can edit them to stylize the output "
+"the way you like. Anyway, is important to tell you that you MUST HAVE some "
+"HTML knowledge to edit the templates. In case you mess with that code "
+"without knowing what you are doing, the output might not work properly."
+msgstr ""
+"<strong>Crear un Área.</strong> Ve a 'Areas' y crea un área utilizando el "
+"formulario. El único campo que DEBES completar es el Nombre. Las plantillas "
+"ya tienen un valor por defecto. Pero claro, puedes editarlos para estilizar "
+"el resultado de la manera que desees. De todos modos, es importante decirte "
+"que DEBES TENER algún conocimiento de HTML para editar las plantillas. En "
+"caso de que experimentes con el código sin saber lo que estás haciendo, el "
+"resultado puede no funcionar correctamente."
+
+#: ../howto.php:52
+msgid ""
+"<strong>Add an Item.</strong> After having created the area, you have to "
+"populate it with 'Items', which are actually fancy links, with HTML elements "
+"that you can add or remove. They point to the entries you have made, of any "
+"kind: posts, pages, media files and custom post types. In order to add the "
+"items, you must go to the main page of the plugin (The Sorter) and click on "
+"the button displaying 'Add Item', which will open a little window with a "
+"form within. First, pick which kind of post you want to get. After this, a "
+"second field appear. There you have to pick the post you want to link a "
+"reference with. After having picked the post and pressed the Save button, "
+"then you have to see the element created just below the name of the area in "
+"which you added the item."
+msgstr ""
+"<strong>Agrega un Ítem.</strong> Después de crear el área, tienes que "
+"poblarlo con los \"Ítems\", que en realidad son enlaces embellecidos, con "
+"elementos HTML que puedes agregar o borrar. Los mismos apuntan a las "
+"entradas que hayas realizado, de cualquier tipo: entradas, páginas, archivos "
+"multimedia y entradas de tipo personalizado. Para poder agregar un ítem, "
+"debes ingresar a la página principal del plugin (El Sorteador) y hacer clic "
+"sobre el botón que dice 'Agregar Ítem' que abrirá una pequeña ventana con un "
+"formulario dentro. Primero elige que clase de entrada deseas tener. Luego "
+"aparecerá un segundo campo donde deberás elegir la entrada con el cual "
+"deseas crear la referencia. Luego de haber elegido la entrada y presionado "
+"el botón Guardar, deberás el elemento creado justo debajo del nombre del "
+"área donde hayas agregado el ítem."
+
+#: ../howto.php:54
+msgid ""
+"<strong>Order 'a piacere'.</strong> Once you have multiple items within an "
+"area, you can use drag and drop to place the items in the order you wish. "
+"You will see the current order number at the top right corner of the item, "
+"showing you the final order the elements will take when displayed."
+msgstr ""
+"<strong>Ordena a gusto.</strong> Una vez que tengas múltiples ítems dentro "
+"de un área, puedes arrastrar y soltar para ordenar los ítems de la manera "
+"que gustes. Verás el orden actual en la esquina superior derecha del ítem, "
+"mostrándote el orden final que los elementos tendrán cuando sean mostrados."
+
+#: ../howto.php:56
+msgid ""
+"<strong>Add the code or the widget.</strong> This is the last step. Once you "
+"add the code, you are free to go. Go to the Areas' Page. There you will see "
+"the list of the created areas. Once you find the one you were looking for, "
+"place the cursor over the name. There you'll see a menu appearing below that "
+"name. Clic the 'View Code' option. Now you have two options: Add the PHP "
+"code within a page of the theme you like, or add the area's 'shortcode' to "
+"any specific entry, like a page, a post or custom one. <strong>BE CAREFUL:</"
+"strong> The first one only works within PHP files. The second one is meant "
+"to be used only within Wordpress' entries, that is why they have so "
+"different syntaxes. WIDGET: You can also add an instance of the widget in "
+"any dynamic sidebar your theme could have."
+msgstr ""
+"<strong>Agregar el código o el widget.</strong> Este es el último paso. Una "
+"vez que agregues el código, estás listo. Ve a la página de Áreas. Allí verás "
+"una lista de las áreas creadas. Una vez que encuentres el que buscas, ubica "
+"el puntero sobre el nombre. Allí verás un menú que aparece debajo del "
+"nombre. Haz clic sobre la opción 'Ver Código'. Ahora tienes dos opciones: "
+"Agregar el código PHP dentro del tema que esté activo o agregar el "
+"'shortcode' del área en alguna entrada específica, como una página, entrada "
+"u otro en particular. <strong>CUIDADO:</strong> El primero sólo funciona "
+"dentro de archivos PHP. El segundo sólo funciona dentro de las entradas de "
+"WordPress, es por eso que tienen sintaxis diferentes. WIDGET: También puedes "
+"agregar una instancia del widget en cualquier barra lateral dinámica que el "
+"tema actual tenga activado."
+
+#: ../howto.php:59
+msgid ""
+"If you followed these steps properly, now you have to be seeing a list of "
+"posts and links anywhere you placed the code we supplied."
+msgstr ""
+"Si seguiste estos pasos correctamente, ahora debes poder ver una lista de "
+"entradas y enlaces en el lugar que hayas ubicado el código que te dimos."
+
+#: ../howto.php:61
+msgid "Uses"
+msgstr "Usos"
+
+#: ../howto.php:63
+msgid ""
+"You can use the generated code to display those posts the way you want. You "
+"can use it as picture galleries, posts slides, sidebars for featured posts, "
+"merge it with any JS and CSS library to do something special, any way you "
+"can imagine. It is now up to you and your creativity to find the best way to "
+"amuse with the output this plugin gives you."
+msgstr ""
+"Puedes usar el código generado para mostrar aquellas entradas de la manera "
+"que desees. Puedes usarlo como una galería de imágenes, crear barridos, "
+"ubicarlo en barras laterales y mostrarlos como entradas seleccionadas, "
+"combinarlo con alguna librería JS y CSS para hacer algo especial, o "
+"cualquier otra cosa que te imagines. Ahora es tu turno y el de tu "
+"creatividad de encontrar la mejor manera de impresionar con las salidas que "
+"este plugin te ofrece."
+
+#: ../howto.php:65
+msgid "Advices"
+msgstr "Avisos"
+
+#: ../howto.php:68
+msgid ""
+"When you deactivate an item or an area, they won't be displayed in public."
+msgstr "Cuando desactivas un ítem o área, no se mostrarán al público."
+
+#: ../howto.php:69
+msgid "When you delete an item or an area, the element cannot be restored."
+msgstr "Cuando eliminas un ítem o área, el elemento no se puede restaurar."
+
+#: ../howto.php:70
+msgid "When you delete an area, the items within get deleted also."
+msgstr "Cuando eliminas un área, los ítems pertenecientes también se eliminan."
+
+#: ../howto.php:73
+msgid "That's it. Farewell and good luck!"
+msgstr "¡Eso es todo! ¡Buena suerte!"
+
+#: ../items.php:47
+msgid "Items"
+msgstr "Items"
+
+#: ../items.php:75
+msgid "Are you sure you want to delete this item from this area?"
+msgstr "¿Estás seguro que deseas eliminar este ítem de este área?"
+
+#: ../items.php:90
+msgid "Add Item"
+msgstr "Agregar Item"
+
+#: ../items.php:96
+#, php-format
+msgid "You must add an area first. <a href=\"%s\">Click here</a> to do it."
+msgstr ""
+"Primero, debe agregar un área. <a href=\"%s\">Haga clic aquí</a> para "
+"hacerlo."
+
+#: ../metaboxes.php:44
+msgid "Required fields are marked with a <strong>star (*)</strong>."
+msgstr ""
+"Los campos obligatorios están marcados con un <strong>asterisco (*)</strong>."
+
+#: ../metaboxes.php:61
+msgid ""
+"You can use the following tags within the templates to arrange and blend "
+"them at taste."
+msgstr ""
+"Puede utilizar las siguientes etiquetas dentro de las plantillas para "
+"manipularlas a su propio gusto."
+
+#: ../metaboxes.php:64
+msgid ""
+"The list of items for the area. <em>Only use this in the Main Container "
+"Template.</em>"
+msgstr ""
+"La lista de ítems para el área. <em>Sólo utilícelo en la Plantilla Principal."
+"</em>"
+
+#: ../metaboxes.php:67
+msgid ""
+"The URL for the post thumbnail (if supported by your theme), depending on "
+"the size you require.<br /><em>s = small</em><br /><em>m = medium</em><br /"
+"><em>f = full</em>"
+msgstr ""
+"La URL para la imagen destacada (si el tema actual lo soporta), dependiendo "
+"del tamaño que desee.<br /><em>s = pequeño</em><br /><em>m = mediano</"
+"em><br /><em>f = grande</em>"
+
+#: ../metaboxes.php:70
+msgid "The permanent URL for the post."
+msgstr "La URL permanente de la entrada."
+
+#: ../metaboxes.php:73
+msgid "The title of the post."
+msgstr "El título de la entrada"
+
+#: ../metaboxes.php:76
+msgid "A brief extract from the post content, without format."
+msgstr "Un breve extracto del contenido de la entrada, sin formato."
+
+#: ../metaboxes.php:79
+msgid "Full date of post publish."
+msgstr "Fecha completa de publicación de la entrada"
+
+#: ../thesorter.php:179
+msgid "The Sorter > Items"
+msgstr "El Sorteador > Items"
+
+#: ../thesorter.php:189
+msgid "The Sorter > Areas"
+msgstr "El Sorteador > Areas"
+
+#: ../thesorter.php:198
+msgid "The Sorter > How to use"
+msgstr "The Sorter > Cómo Usar"
+
+#: ../thesorter.php:281
+msgid "Attention"
+msgstr "Atención"
+
+#: ../thesorter.php:282
+msgid "Advanced tags"
+msgstr "Etiquetas avanzadas"
+
+#: ../widget.php:42
+msgid "Display a select area from the sorter into a sidebar"
+msgstr "Muestra un área de selección para el sorteador en la barra lateral"
+
+#: ../widget.php:83
+msgid "Title"
+msgstr "Título"
+
+#: ../widget.php:92
+msgid "Area"
+msgstr "Area"
+
+#: ../widget.php:94
+msgid "Choose an area"
+msgstr "Elegir un área"
+
+#: ../widget.php:104
+msgid "Limit"
+msgstr "Límite"
+
+#: ../widget.php:106
+msgid "Only numbers"
+msgstr "Sólo números"
+
+#: ../widget.php:111
+msgid "You must add some areas first to use this widget."
+msgstr "Debes agregar algunas áreas primero para usar este widget."
+
+#~ msgid "Add item into '%s' area"
+#~ msgstr "Agregar item dentro del área '%s'"
+
+#~ msgid ""
+#~ "In order this plugin to function properly, you must enable JavaScript."
+#~ msgstr ""
+#~ "Para que esta extensión funcione correctamente, debe habilitar JavaScript "
+#~ "en su navegador."
+
+#~ msgid "The item couldn't be saved. Please, try again."
+#~ msgstr "El ítem no se pudo guardar. Por favor, inténtelo de nuevo."
+
+#~ msgid "Cheatin' uh?"
+#~ msgstr "Haciendo trampas, ¿eh?"
+
+#~ msgid ""
+#~ "If you choose to sort the list manually, then the direction will not be "
+#~ "used."
+#~ msgstr "Si elige ordenar la lista manualmente, entonces "
+
+#~ msgid "Common Settings"
+#~ msgstr "Propiedades comunes"
+
+#~ msgid "Save Section"
+#~ msgstr "Guardar Sección"
